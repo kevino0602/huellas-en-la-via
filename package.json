@@ -1,0 +1,34 @@
+{
+  "name": "huellas-en-la-via",
+  "private": true,
+  "version": "0.1.0",
+  "description": "App para reportar animales muertos en las calles del Ecuador. Huellas en la Vía by KPSB.",
+  "author": "Kevin Paul Sevilla Borja (KPSB)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "iconos": "python3 scripts/generar-iconos.py",
+    "probar-bd": "bash scripts/probar-bd/probar.sh"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0",
+    "idb-keyval": "6.3.0",
+    "leaflet": "1.9.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-leaflet": "5.0.0",
+    "react-router": "7.18.5"
+  },
+  "devDependencies": {
+    "@types/leaflet": "1.9.22",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vite-plugin-pwa": "1.3.0"
+  }
+}
